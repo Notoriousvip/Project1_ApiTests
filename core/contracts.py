@@ -21,3 +21,23 @@ LIST_RESOURCE_SCHEME = {
     },
     "required" : ["id", "name", "year", "color", "pantone_value"]
 }
+
+CREATED_USER_SCHEME = {
+    "type" : "object",
+    "properties" : {
+        "name" : {"type" : "string"},
+        "job" : {"type" : "string"},
+        "id" : {"type" : "string"}
+    },
+    "required" : ["id"]
+}
+
+UPDATED_USER_SCHEME = {
+    "type" : "object",
+    "properties" : {
+        "name" : {"type" : "string"},
+        "job" : {"type" : "string"},
+        "updatedAt" : {"type" : "string"}
+    },
+    "required" : ["name", "job", "updatedAt"]
+}
