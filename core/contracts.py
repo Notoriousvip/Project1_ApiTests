@@ -41,3 +41,28 @@ UPDATED_USER_SCHEME = {
     },
     "required" : ["name", "job", "updatedAt"]
 }
+
+REGISTERED_USER_SCHEME = {
+    "type" : "object",
+    "properties" : {
+        "id" : {"type" : "number"},
+        "token" : {"type" : "string"}
+    },
+    "required" : ["id", "token"]
+}
+
+LOGIN_USER_SCHEME = {
+    "type": "object",
+    "properties": {
+        "token": {"type": "string"}
+    },
+    "required": ["token"]
+}
+
+LOGIN_ERROR_SCHEME = {
+    "type": "object",
+    "properties": {
+        "error": {"type": "string"}
+    },
+    "required": ["error"]
+}
